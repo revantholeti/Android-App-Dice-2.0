@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:minHeight="150dp"
+        android:minWidth="150dp"
+        android:src="@drawable/dice1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint=""
+        android:id="@+id/textView3"
+        android:layout_above="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:minLines="1"
+        android:minHeight="25dp"
+        android:minWidth="100dp"
+        android:textSize="15dp"
+        android:rotation="180"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint=""
+        android:id="@+id/textView4"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:minWidth="200dp"
+        android:minHeight="25dp"
+        android:rotation="180"
+        android:minLines="2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROLL"
+        android:id="@+id/button8"
+        android:rotation="180"
+        android:onClick="r"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint=""
+        android:id="@+id/textView5"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:minWidth="100dp"
+        android:minHeight="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint=""
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/imageView4"
+        android:minHeight="25dp"
+        android:minWidth="150dp"
+        android:minLines="2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROLL"
+        android:id="@+id/button10"
+        android:onClick="t"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:id="@+id/button12"
+        android:rotation="90"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp"
+        android:onClick="res"/>
+
+</RelativeLayout>
